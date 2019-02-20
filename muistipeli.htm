@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muistipeli</title>
+        <link rel="stylesheet" href="muistipeli.css">
+    </head>
+    <body>
+        <div id="gamecontrols" class="mp-gamecontrols">
+            <div id="newGameButton" class="mp-button">
+                Uusi&nbsp;Peli
+            </div>
+            
+            <div id="settingsButton" class="mp-button">Asetukset</div>
+
+            <div id="gamesettings" class="mp-slidedown mp-settings mp-shadow">
+                <div class="mp-opt-cont">
+                    <h3 class="mp-opt-title">Symbolit</h3>
+
+                        <div id="emojiButton" class="mp-button mp-option">Emoji</div>
+
+                    <h3 class="mp-opt-title">Kanjit</h3>
+
+                        <div id="kanji-lvl1Button" class="mp-button mp-option">1. Luokka</div>
+                        <div id="kanji-lvl2Button" class="mp-button mp-option">2. Luokka</div>
+                        <div id="kanji-lvl3Button" class="mp-button mp-option">3. Luokka</div>
+                        <div id="kanji-lvl4Button" class="mp-button mp-option">4. Luokka</div>
+                        <div id="kanji-lvl5Button" class="mp-button mp-option">5. Luokka</div>
+                        <div id="kanji-lvl6Button" class="mp-button mp-option">6. Luokka</div>
+                        <div id="kanjiAllButton" class="mp-button mp-option">Kaikki</div>
+                        
+                    <h3 class="mp-opt-title">Näytä</h3>
+
+                        <div id="meaningButton" class="mp-button mp-option">Merkitys</div>
+                        <div id="kunButton" class="mp-button mp-option">Kun</div>
+                        <div id="onButton" class="mp-button mp-option">On</div>
+                        <div id="randomButton" class="mp-button mp-option">Satunnainen</div>
+                    
+                    <h3 class="mp-opt-title">Vaikeus</h3>
+
+                        <div id="easyButton" class="mp-button mp-option">Helppo</div>
+                        <div id="normalButton" class="mp-button mp-option">Normaali</div>
+                        <div id="hardButton" class="mp-button mp-option">Vaikea</div>
+                        <div id="hardestButton" class="mp-button mp-option">Vaikein</div>
+                </div>
+            </div>
+
+            <div id="gameTimer" class="mp-timer">00:00.0</div>
+
+        </div>
+        
+        <div id="gameboard" class="mp-gameboard"></div>
+
+        <div class="mp-gameclear-cont" style="display: none;">
+            <div id="gameClearMessage" class="mp-clearmessage mp-shadow">
+                Kaikki parit löydetty!<br/>
+                <div id="gameClearOKButton" class="mp-button">OK</div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="kanjiDefs.js"></script>
+        <script src="muistipeli.js"></script>
+        <script src="mp_debug.js"></script>
+    </body>
+</html>
